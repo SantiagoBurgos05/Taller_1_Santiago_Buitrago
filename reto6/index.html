@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form id="validacion" novalidate >
+        <h1>FORMULARIO REGISTRO</h1>
+        <label for="Tidoc">Tipo Documento</label>
+        <select name="Tidoc" id="Tidoc">
+            <option value="">Cedula de Ciudadania</option>
+            <option value="">Tarjeta de Identidad</option>
+            <option value="">Pasaporte de Extranjeria</option>
+        </select>
+
+        <div id="campoNoDoc">
+            <label for="Nodoc">No. Documento</label>
+            <input type="text" id="Nodoc" name="Nodoc" >
+            <div class="feedback"></div>
+        </div>   
+
+        <div id="campoName">    
+            <label for="Nom">Nombre</label>
+            <input type="text" id="Nom" name="Nom" >
+            <div class="feedback"></div>
+        </div>
+
+        <div id="campoLast">
+            <label for="Apl">Apellido</label>
+            <input type="text" id="Apl" name="Apl">
+            <div class="feedback"></div>
+        </div>
+
+        <div id="date">
+            <label for="FeNa">Fecha Nacimiento</label>
+            <input type="date" id="FeNa" name="FeNa">
+            <div class="feedback"></div>
+        </div>
+
+        <div id="email">
+            <label for="email">Correo electronico</label>
+            <input type="email" id="ema" name="ema" >
+            <div class="feedback"></div>
+        </div>
+
+        <div id="pass">
+            <label for="Pass">Contraseña</label>
+            <input type="password" id="Pass" name="Pass" >
+            <div class="feedback"></div>
+        </div>
+        <div id="conPass">
+            <label for="Pass">Comprobar Contraseña</label>
+            <input type="password" id="confirmm" name="confirmm" >
+            <div class="feedback"></div>
+        </div>
+        <label>Aceptar Términos de uso</label>
+        <input type="checkbox" name="acept" id="acept" >
+        
+        <button id="abrirModal" type="button">Terminos y condiciones</button>
+        <button id="btncal" class="btn btn-success">Enviar</button> 
+    </form>
+    <div id="ventanaModal" class="modal">
+        <div id="contenidoModal" >
+            <span class="cerrarModal">X</span>
+                <p>Estos son los terminos y condiciones correspondiente a la pagina, por su seguridad lealos y conozcalos antes de aceptar.</p>
+        </div>
+    </div>
+    <script src="reto6.js"></script>
+</body>
+</html>

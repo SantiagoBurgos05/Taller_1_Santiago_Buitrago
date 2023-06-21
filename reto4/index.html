@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reto.css">
+    <title>Reto 4</title>
+</head>
+<body>
+    <form>
+        <label for="first">Seleccione el nombre del instructor que desea confirmar: </label>
+        <br>
+        <select name="name" id="name">
+            <option value="1">Jennifer</option>
+            <option value="2">Margarita</option>
+            <option value="3">Erick</option>
+            <option value="4">Cristian</option>
+            <option value="5">Sandra</option>
+            <option value="6">Julio</option>
+            <option value="7">Manuel</option>
+        </select>
+        <br>
+        <label for="last">Seleccione el apellido del instructor que desea confirmar: </label>
+        <br>
+        <select name="lastname" id="lastname">
+            <option value="1">Fajardo</option>
+            <option value="2">Guarin</option>
+            <option value="3">Granados</option>
+            <option value="4">Buitrago</option>
+            <option value="5">Rueda</option>
+            <option value="6">Garavito</option>
+        </select>
+        <br>
+        <label for="sign">Seleccione la competencia del instructor que desea confirmar: </label>
+        <br>
+        <select name="signa" id="signa">
+            <option value="1">Fundamentos de JavaScript</option>
+            <option value="2">Prototipado Avanzado</option>
+            <option value="3">Java Avanzado</option>
+            <option value="4">Diseño Proyecto</option>
+            <option value="5">Consulta y SQL extendido</option>
+            <option value="6">Derechos para el trabajo</option>
+            <option value="7">Python basico</option>
+        </select>
+        <br>
+        <button onclick="conf(event)">Confirmar</button>
+        <p id="resultado"></p>
+    </form>
+
+    <script type="text/JavaScript" src="reto4.js"></script>
+</body>
+</html>

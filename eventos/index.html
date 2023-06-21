@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuadro eventos</title>
+    <link rel="stylesheet" href="/eventos/styles.css" />
+    
+   
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+      <h1>Eventos JavaScript</h1>
+      <table>
+        <tr>
+          <th>Evento</th>
+          <th>Ejemplo de aplicación</th>
+          <th>Demostración</th>
+        </tr>
+     
+        <tr>
+            <td>mouseenter</td>
+            <td>Mostrar una imagen ampliada cuando el usuario coloca el cursor sobre ella.
+            </td>
+            <td id="demo-mouseenter">
+                <img id="imagen" src="/img/image-83.webp" width="100"alt="Imagen ampliada"/>
+              <div id="imagen-ampliada" style="display: none">
+                <img src="/img/image-83.webp" alt="Imagen ampliada" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td>mouseleave</td>
+            <td>Ocultar un elemento cuando el cursor sale de su área.</td>
+            <td id="demo-mouseleave">
+              <img id="mi-elemento" src="/img/image-83.webp" width="100"alt="Imagen"/></td>
+          </tr>
+        <tr>
+          <td>focus</td>
+          <td>Cambiar el estilo de un campo de texto cuando recibe el enfoque.</td>
+          <td id="demo-focus"><input type="text" id="campo-texto" />
+          </td>
+        </tr>
+        <tr>
+            <td>mouseout</td>
+            <td>Se activa cuando el puntero del mouse se aleja de un elemento.</td>
+            <td><div onmouseout="alert('Aleja el cursor de mí')">Aleja el cursor</div></td>
+        </tr>
+        <tr>
+            <td>mouseover</td>
+            <td>Se activa cuando el puntero del mouse se mueve sobre un elemento.</td>
+            <td><div onmouseover="alert('Pasa el cursor sobre mí')">Pasa el cursor aquí</div></td>
+        </tr>
+        <tr>
+            <td>keydown</td>
+            <td>Se activa cuando se presiona una tecla en el teclado.</td>
+            <td><input type="text" onkeydown="alert('Has presionado una tecla')">Presiona una tecla</td>
+        </tr>
+        <tr>
+          <td>resize</td>
+          <td>Ajustar el diseño de una página en respuesta al cambio de tamaño dela ventana del navegador.</td>
+          <td id="demo-resize"></td>
+        </tr>
+        <tr>
+          <td>contextmenu</td>
+          <td>Personalizar el menú contextual que aparece al hacer clic derecho enun elemento.</td><td id="demo-contextmenu">
+            <div id="elemento-personalizado">
+              Haz clic derecho aquí para mostrar el menú contextual personalizado.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>touchstart</td>
+          <td>Responder al inicio de un toque en una pantalla táctil.</td>
+          <td id="demo-touchstart">
+            <div id="pantalla-tactil">
+              Toca aquí para iniciar el evento táctil.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>scroll</td>
+          <td>Realizar una acción cuando el usuario desplaza el contenido de una página.</td>
+          <td id="demo-scroll"></td>
+        </tr>
+      </table>
+    </main>
+    <script type="text/JavaScript" src="/eventos/eventos.js"></script>
+  </body>
+</html>

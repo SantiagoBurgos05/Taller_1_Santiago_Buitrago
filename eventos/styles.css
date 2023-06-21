@@ -1,0 +1,45 @@
+body{
+    font-family: "broadway", serif;
+    height: 900px;
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    background-color: #000000;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+th {
+    background-color: #7700ff;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #7700ff;
+}
+
+button, input[type="text"], div {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+}

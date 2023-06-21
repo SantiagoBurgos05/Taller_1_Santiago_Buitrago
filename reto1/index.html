@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reto.css">
+    <title>Reto 1</title>
+</head>
+<body>
+    <form >
+    <label for="word">Ingrese la palabra: </label>
+    <br>
+    <input type="text" id="word">
+    <br>
+    <label for="op">Qué deseas saber de la palabra? </label>
+    <br>
+    <select name="options" id="options">
+        <option value="long">Longitud de la palabra</option>
+        <option value="may">La palabra convertida a mayúscula</option>
+        <option value="min">La palabra convertida a minúscula</option>
+        <option value="firstC">El primer caracter de la palabra</option>
+    </select>
+    <br>
+    <button onclick="know(event)">Saber</button>
+</form>
+    <script type="text/JavaScript" src="/reto1/reto1.js"></script>
+</body>
+</html>

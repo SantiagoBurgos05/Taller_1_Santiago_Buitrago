@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reto.css">
+    <title>Reto 2</title>
+</head>
+<body>
+    <form >
+        <label for="temp">Ingrese los grados que desea convertir: </label>
+        <br>
+        <input type="number" id="temp">
+        <br>
+        <label for="convertD">Usted desea convertir grados: </label>
+        <br>
+        <select name="convertD" id="convertD">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celcius">Celcius</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <br>
+        <label for="convertA">A grados: </label>
+        <br>
+        <select name="convertA" id="convertA">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celcius">Celcius</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <br>
+    <button onclick="convert(event)">Convertir</button>
+</form>
+    <script type="text/JavaScript" src="/reto2/reto2.js"></script>
+</body>
+</html>
